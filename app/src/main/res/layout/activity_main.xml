@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.covidapp.MainActivity">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_class"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/txtCountry"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"
+                    android:textSize="50sp"
+                    android:gravity="center"
+                    android:layout_weight="4"
+                    />
+                <TextView
+                    android:id="@+id/txtActive"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorDark"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/txtConfirmed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="@color/colorDark"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/txtRecovered"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDark"
+                    android:layout_weight="1"
+                    />
+                <TextView
+                    android:id="@+id/txtDeaths"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorDark"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/txtLastUpdate"
+                    android:layout_width="match_parent"
+                    android:text=""
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"
+                    android:textSize="35sp"
+                    android:gravity="center"
+                    android:layout_weight="3"
+                    />
+
+                <EditText
+                    android:id="@+id/editCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Enter a Country"
+                    android:gravity="center"
+                    android:textSize="30dp"
+                    android:background="@color/colorWhite"
+                    android:inputType="textAutoComplete"
+                    android:singleLine="true"
+                    android:imeOptions="actionDone"/>
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:weightSum="2"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnHistory"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="History"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>
